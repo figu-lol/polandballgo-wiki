@@ -1,1 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: #e5e7eb;
+}
 
+a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    background: #111827;
+    padding: 20px;
+    border-bottom: 2px solid #1f2937;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    background: #0f172a;
+    border-bottom: 1px solid #1f2937;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARDS */
+.card {
+    background: #111827;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+}
+
+/* HEADLINES */
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* META TEXT */
+.meta {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    border-top: 1px solid #1f2937;
+}
