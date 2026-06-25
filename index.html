@@ -6,29 +6,12 @@
     <title>PBGO Wiki</title>
 
     <style>
-        /* =========================
-           GLOBAL STYLE
-        ==========================*/
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #0e1117;
             color: #ffffff;
         }
-
-        a {
-            color: #4da3ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* =========================
-           HEADER
-        ==========================*/
 
         header {
             background-color: #161b22;
@@ -39,105 +22,70 @@
 
         header h1 {
             margin: 0;
-            font-size: 42px;
-            letter-spacing: 1px;
+            font-size: 40px;
         }
 
         header p {
-            margin-top: 8px;
+            margin: 5px;
             color: #b0b0b0;
         }
-
-        /* =========================
-           NAVBAR
-        ==========================*/
 
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 15px;
+            gap: 15px;
+            padding: 10px;
             background-color: #111827;
-            border-bottom: 1px solid #222b3a;
         }
 
         nav a {
-            font-weight: bold;
+            color: white;
+            background: #1f2937;
             padding: 8px 12px;
             border-radius: 6px;
-            background-color: #1f2937;
+            text-decoration: none;
         }
 
         nav a:hover {
-            background-color: #2a3a55;
+            background: #2a3a55;
         }
-
-        /* =========================
-           MAIN CONTAINER
-        ==========================*/
 
         .container {
             max-width: 1000px;
             margin: auto;
-            padding: 25px;
+            padding: 20px;
         }
 
-        /* =========================
-           CARDS
-        ==========================*/
-
         .card {
-            background-color: #161b22;
-            padding: 18px;
+            background: #161b22;
+            padding: 15px;
             margin: 15px 0;
             border-radius: 10px;
             border: 1px solid #222b3a;
-            transition: 0.2s;
-        }
-
-        .card:hover {
-            transform: scale(1.01);
-            background-color: #1b2230;
         }
 
         .card h2 {
             margin-top: 0;
         }
 
-        /* =========================
-           GRID SECTION
-        ==========================*/
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
+        .banner {
+            border-left: 4px solid gold;
         }
 
-        .box {
-            background-color: #161b22;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #222b3a;
-            text-align: center;
+        .past-banner {
+            border-left: 4px solid #4da3ff;
         }
 
-        .box:hover {
-            background-color: #1b2230;
+        ul {
+            margin: 5px 0 0 20px;
         }
-
-        /* =========================
-           FOOTER
-        ==========================*/
 
         footer {
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
             color: #777;
             border-top: 1px solid #222b3a;
         }
-
     </style>
 </head>
 
@@ -145,84 +93,69 @@
 
 <header>
     <h1>PBGO Wiki</h1>
-    <p>Fan-made encyclopedia for PolandBall GO</p>
+    <p>Live PBGO Community Dashboard</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">Countries</a>
+    <a href="#">Banners</a>
     <a href="#">Events</a>
-    <a href="#">Mechanics</a>
-    <a href="#">Guides</a>
 </nav>
 
 <div class="container">
 
-    <div class="card">
-        <h2>📌 Welcome</h2>
-        <p>
-            This is a fan-made wiki for PolandBall GO.
-            It documents countries, events, mechanics, and community history.
+    <!-- CURRENT BANNER -->
+    <div class="card banner">
+        <h2>🔥 Current Banner</h2>
+        <p><b>Banner Name:</b> European Expansion</p>
+
+        <p><b>Featured Countries:</b></p>
+        <ul>
+            <li>🇪🇸 Spain — Legendary</li>
+            <li>🇫🇷 France — Epic</li>
+            <li>🇩🇪 Germany — Rare</li>
+        </ul>
+
+        <p><b>Duration:</b> 25 June - 2 July</p>
+    </div>
+
+    <!-- PAST BANNERS -->
+    <div class="card past-banner">
+        <h2>📜 Past Banners</h2>
+
+        <ul>
+            <li><b>Cold War Revival</b> — 🇺🇸 🇷🇺 🇨🇳</li>
+            <li><b>Medieval Era</b> — 🇬🇧 🇫🇷 🇪🇸</li>
+            <li><b>Industrial Expansion</b> — 🇩🇪 🇺🇸 🇯🇵</li>
+        </ul>
+
+        <p style="color:#888;">
+            More banners will be added as the timeline grows.
         </p>
     </div>
 
+    <!-- INFO SECTION -->
     <div class="card">
-        <h2>🌍 Featured Sections</h2>
-
-        <div class="grid">
-            <div class="box">
-                <h3>Countries</h3>
-                <p>Flags, info, and lore</p>
-            </div>
-
-            <div class="box">
-                <h3>Events</h3>
-                <p>Wars & history</p>
-            </div>
-
-            <div class="box">
-                <h3>Mechanics</h3>
-                <p>How PBGO works</p>
-            </div>
-
-            <div class="box">
-                <h3>Guides</h3>
-                <p>For new players</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>🧠 About This Wiki</h2>
+        <h2>🧠 How This Works</h2>
         <p>
-            This project is community-made and not affiliated with the official PBGO team.
-            It is still in early development.
+            The current banner shows active featured countries.
+            Past banners remain for historical tracking and lore.
         </p>
     </div>
 
+    <!-- ABOUT -->
     <div class="card">
-        <h2>⚡ Updates</h2>
-        <ul>
-            <li>v0.1 - Basic homepage created</li>
-            <li>v0.2 - Styling system added</li>
-            <li>v0.3 - Navigation layout introduced</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>🚧 Coming Soon</h2>
-        <ul>
-            <li>Country pages</li>
-            <li>Interactive map</li>
-            <li>Search system</li>
-            <li>Event timeline</li>
-        </ul>
+        <h2>📌 About</h2>
+        <p>
+            Fan-made PBGO wiki. Not affiliated with the official game.
+        </p>
     </div>
 
 </div>
 
 <footer>
-    <p>PBGO Wiki — Fan Project</p>
+    PBGO Wiki — Fan Project
 </footer>
 
 </body>
