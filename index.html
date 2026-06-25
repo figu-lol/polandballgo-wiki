@@ -1,161 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PBGO Wiki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PBGO World Chronicle</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0e1117;
-            color: #ffffff;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: #ffffff;
+}
 
-        header {
-            background-color: #161b22;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #222b3a;
-        }
+header {
+    padding: 30px;
+    text-align: center;
+    background: #111827;
+    border-bottom: 2px solid #1f2937;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
 
-        header p {
-            margin: 5px;
-            color: #b0b0b0;
-        }
+header p {
+    color: #a0a0a0;
+}
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding: 10px;
-            background-color: #111827;
-        }
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background: #0f172a;
+}
 
-        nav a {
-            color: white;
-            background: #1f2937;
-            padding: 8px 12px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    background: #1f2937;
+    border-radius: 6px;
+}
 
-        nav a:hover {
-            background: #2a3a55;
-        }
+nav a:hover {
+    background: #334155;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
 
-        .card {
-            background: #161b22;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
-            border: 1px solid #222b3a;
-        }
+.card {
+    background: #111827;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #3b82f6;
+}
 
-        .card h2 {
-            margin-top: 0;
-        }
+.era {
+    border-left: 4px solid gold;
+}
 
-        .banner {
-            border-left: 4px solid gold;
-        }
+.news {
+    border-left: 4px solid #22c55e;
+}
 
-        .past-banner {
-            border-left: 4px solid #4da3ff;
-        }
+.war {
+    border-left: 4px solid #ef4444;
+}
 
-        ul {
-            margin: 5px 0 0 20px;
-        }
+small {
+    color: #9ca3af;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            border-top: 1px solid #222b3a;
-        }
-    </style>
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    border-top: 1px solid #1f2937;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>PBGO Wiki</h1>
-    <p>Live PBGO Community Dashboard</p>
+<h1>PBGO WORLD CHRONICLE</h1>
+<p>Live record of global events, eras, and conflicts</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Countries</a>
-    <a href="#">Banners</a>
-    <a href="#">Events</a>
+<a href="#">Chronicle</a>
+<a href="#">Eras</a>
+<a href="#">Conflicts</a>
+<a href="#">World Map</a>
 </nav>
 
 <div class="container">
 
-    <!-- CURRENT BANNER -->
-    <div class="card banner">
-        <h2>🔥 Current Banner</h2>
-        <p><b>Banner Name:</b> European Expansion</p>
+<!-- CURRENT WORLD STATE -->
+<div class="card news">
+<h2>🗞️ Latest World Report</h2>
+<p><b>Situation:</b> Rising tensions across Europe</p>
+<p><b>Summary:</b> Multiple countries are entering diplomatic instability following recent territorial disputes.</p>
+<small>Updated: 25 June 2026</small>
+</div>
 
-        <p><b>Featured Countries:</b></p>
-        <ul>
-            <li>🇪🇸 Spain — Legendary</li>
-            <li>🇫🇷 France — Epic</li>
-            <li>🇩🇪 Germany — Rare</li>
-        </ul>
+<!-- CURRENT ERA -->
+<div class="card era">
+<h2>🌍 Current Era: Era of Expansion</h2>
+<p>
+The world is currently experiencing rapid territorial growth, shifting alliances,
+and increasing regional conflicts.
+</p>
+</div>
 
-        <p><b>Duration:</b> 25 June - 2 July</p>
-    </div>
+<!-- ACTIVE CONFLICT -->
+<div class="card war">
+<h2>⚔️ Active Conflict Report</h2>
+<p><b>Conflict:</b> Central European Dispute</p>
+<ul>
+<li>🇪🇸 Spain — Stabilizing</li>
+<li>🇫🇷 France — Diplomatic pressure</li>
+<li>🇩🇪 Germany — Economic escalation</li>
+</ul>
+<small>Status: Ongoing</small>
+</div>
 
-    <!-- PAST BANNERS -->
-    <div class="card past-banner">
-        <h2>📜 Past Banners</h2>
+<!-- HISTORICAL ARCHIVE -->
+<div class="card">
+<h2>📜 Recent Chronicle Entries</h2>
 
-        <ul>
-            <li><b>Cold War Revival</b> — 🇺🇸 🇷🇺 🇨🇳</li>
-            <li><b>Medieval Era</b> — 🇬🇧 🇫🇷 🇪🇸</li>
-            <li><b>Industrial Expansion</b> — 🇩🇪 🇺🇸 🇯🇵</li>
-        </ul>
+<ul>
+<li><b>Cold Fragmentation Crisis</b> — Diplomatic breakdown across northern states</li>
+<li><b>The Baltic Realignment</b> — Major shift in alliances</li>
+<li><b>Industrial Surge Period</b> — Rapid economic expansion phase</li>
+</ul>
+</div>
 
-        <p style="color:#888;">
-            More banners will be added as the timeline grows.
-        </p>
-    </div>
-
-    <!-- INFO SECTION -->
-    <div class="card">
-        <h2>🧠 How This Works</h2>
-        <p>
-            The current banner shows active featured countries.
-            Past banners remain for historical tracking and lore.
-        </p>
-    </div>
-
-    <!-- ABOUT -->
-    <div class="card">
-        <h2>📌 About</h2>
-        <p>
-            Fan-made PBGO wiki. Not affiliated with the official game.
-        </p>
-    </div>
+<!-- ABOUT -->
+<div class="card">
+<h2>🧠 About This Chronicle</h2>
+<p>
+The PBGO World Chronicle is a living archive documenting the evolution of the PBGO world,
+including political eras, conflicts, and global events.
+</p>
+</div>
 
 </div>
 
 <footer>
-    PBGO Wiki — Fan Project
+PBGO World Chronicle — Fan Archive Project
 </footer>
 
 </body>
