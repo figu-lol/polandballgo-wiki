@@ -14,14 +14,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* HEADER */
 header {
     background: #111827;
     padding: 20px;
-    border-bottom: 2px solid #1f2937;
+    border-bottom: 1px solid #1f2937;
 }
 
-/* NAV */
 nav {
     display: flex;
     gap: 15px;
@@ -30,14 +28,12 @@ nav {
     border-bottom: 1px solid #1f2937;
 }
 
-/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
-/* CARDS */
 .card {
     background: #111827;
     padding: 15px;
@@ -46,18 +42,11 @@ nav {
     border-radius: 8px;
 }
 
-/* HEADLINES */
-h1, h2, h3 {
-    margin-top: 0;
-}
-
-/* META TEXT */
 .meta {
     font-size: 12px;
     color: #9ca3af;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
