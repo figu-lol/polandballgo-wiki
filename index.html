@@ -3,146 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PBGO News Chronicle</title>
+<title>PBGO News Network</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0b0f19;
-    color: #ffffff;
+    background: #f4f4f4;
+    color: #111;
 }
 
-header {
-    text-align: center;
-    padding: 30px;
-    background: #111827;
-    border-bottom: 2px solid #1f2937;
+/* TOP BAR */
+.topbar {
+    background: #b80000;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 42px;
+/* NAV */
+nav {
+    background: #ffffff;
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-header p {
-    color: #9ca3af;
+nav a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: #b80000;
+}
+
+/* LAYOUT */
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* MAIN STORY */
+.main-story {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.main-story h1 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+/* SIDE STORIES */
+.side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .card {
-    background: #111827;
-    padding: 18px;
-    margin: 15px 0;
-    border-radius: 10px;
-    border-left: 4px solid #3b82f6;
+    background: white;
+    padding: 12px;
+    border: 1px solid #ddd;
 }
 
-.patch {
-    border-left: 4px solid #f59e0b;
+.card h3 {
+    margin-top: 0;
+    font-size: 16px;
 }
 
-.banner {
-    border-left: 4px solid #a855f7;
+.meta {
+    font-size: 12px;
+    color: gray;
 }
 
-.news {
-    border-left: 4px solid #22c55e;
-}
-
-.archive {
-    border-left: 4px solid #64748b;
-}
-
-small {
-    color: #9ca3af;
-}
-
-ul {
-    margin: 8px 0 0 20px;
-}
-
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    color: #6b7280;
-    border-top: 1px solid #1f2937;
+    font-size: 12px;
+    color: gray;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>🗞️ PBGO News Chronicle</h1>
-<p>Official-style fan news covering updates, banners & game reports</p>
-</header>
+<div class="topbar">
+PBGO NEWS NETWORK — Fan-made reporting system
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">World</a>
+<a href="#">Updates</a>
+<a href="#">Banners</a>
+<a href="#">Archive</a>
+</nav>
 
 <div class="container">
 
-<!-- LATEST NEWS -->
-<div class="card news">
-<h2>🔥 Latest Announcement</h2>
-<p><b>New Regional Update Incoming</b></p>
+<!-- MAIN ARTICLE -->
+<div class="main-story">
+<h1>PBGO announces regional expansion system overhaul</h1>
+<p class="meta">Posted 25 June 2026 · Game Updates</p>
+
 <p>
-Developers have teased a new regional expansion system affecting Europe and Asia regions.
-Players should expect map adjustments and balance changes.
+The PBGO development team has introduced a new regional expansion framework,
+changing how territorial influence and conflicts are managed across Europe and Asia.
 </p>
-<small>Posted: 25 June 2026</small>
+
+<p>
+Players are reporting increased diplomatic activity and shifting strategic alliances
+following the update rollout.
+</p>
 </div>
 
-<!-- CURRENT BANNER -->
-<div class="card banner">
-<h2>🎴 Current Banner</h2>
-<p><b>European Expansion Event</b></p>
-<ul>
-<li>🇪🇸 Spain — Legendary Rate UP</li>
-<li>🇫🇷 France — Epic Rate UP</li>
-<li>🇩🇪 Germany — Rare Rate UP</li>
-</ul>
-<p><b>Duration:</b> 25 June – 2 July</p>
-</div>
+<!-- SIDE COLUMN -->
+<div class="side">
 
-<!-- PATCH NOTES -->
-<div class="card patch">
-<h2>📦 Patch Notes v1.3</h2>
-<ul>
-<li>Adjusted war balance in Central Europe</li>
-<li>Increased influence gain for smaller nations</li>
-<li>Fixed diplomacy UI bug</li>
-<li>Improved event tracking system</li>
-</ul>
-</div>
-
-<!-- GAME REPORT -->
 <div class="card">
-<h2>📊 Weekly Game Report</h2>
-<ul>
-<li>Most active region: Western Europe</li>
-<li>Most used nation: Spain 🇪🇸</li>
-<li>Most conflicts: Border disputes increased by 12%</li>
-</ul>
+<h3>Latest Banner Update</h3>
+<p>European Expansion event is now active with boosted rates for key nations.</p>
+<p class="meta">Updated today</p>
 </div>
 
-<!-- ARCHIVE -->
-<div class="card archive">
-<h2>📜 News Archive</h2>
-<ul>
-<li>v1.2 — First banner system introduced</li>
-<li>v1.1 — Diplomacy overhaul</li>
-<li>v1.0 — Game launch update</li>
-</ul>
+<div class="card">
+<h3>Patch Notes v1.3</h3>
+<p>Balance changes applied to war system and diplomacy mechanics.</p>
+<p class="meta">2 days ago</p>
+</div>
+
+<div class="card">
+<h3>Community Report</h3>
+<p>Increased activity detected in Western Europe region.</p>
+<p class="meta">This week</p>
+</div>
+
+<div class="card">
+<h3>Archive</h3>
+<p>View previous updates and historical patch notes.</p>
+</div>
+
 </div>
 
 </div>
 
 <footer>
-PBGO News Chronicle — Fan-made project (not official)
+PBGO News Network — Unofficial fan journalism project
 </footer>
 
 </body>
