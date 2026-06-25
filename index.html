@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PBGO World Chronicle</title>
+<title>PBGO News Chronicle</title>
 
 <style>
 body {
@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    padding: 30px;
     text-align: center;
+    padding: 30px;
     background: #111827;
     border-bottom: 2px solid #1f2937;
 }
@@ -23,31 +23,10 @@ header {
 header h1 {
     margin: 0;
     font-size: 42px;
-    letter-spacing: 2px;
 }
 
 header p {
-    color: #a0a0a0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-    background: #0f172a;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 14px;
-    background: #1f2937;
-    border-radius: 6px;
-}
-
-nav a:hover {
-    background: #334155;
+    color: #9ca3af;
 }
 
 .container {
@@ -64,20 +43,28 @@ nav a:hover {
     border-left: 4px solid #3b82f6;
 }
 
-.era {
-    border-left: 4px solid gold;
+.patch {
+    border-left: 4px solid #f59e0b;
+}
+
+.banner {
+    border-left: 4px solid #a855f7;
 }
 
 .news {
     border-left: 4px solid #22c55e;
 }
 
-.war {
-    border-left: 4px solid #ef4444;
+.archive {
+    border-left: 4px solid #64748b;
 }
 
 small {
     color: #9ca3af;
+}
+
+ul {
+    margin: 8px 0 0 20px;
 }
 
 footer {
@@ -92,72 +79,70 @@ footer {
 <body>
 
 <header>
-<h1>PBGO WORLD CHRONICLE</h1>
-<p>Live record of global events, eras, and conflicts</p>
+<h1>🗞️ PBGO News Chronicle</h1>
+<p>Official-style fan news covering updates, banners & game reports</p>
 </header>
-
-<nav>
-<a href="#">Chronicle</a>
-<a href="#">Eras</a>
-<a href="#">Conflicts</a>
-<a href="#">World Map</a>
-</nav>
 
 <div class="container">
 
-<!-- CURRENT WORLD STATE -->
+<!-- LATEST NEWS -->
 <div class="card news">
-<h2>🗞️ Latest World Report</h2>
-<p><b>Situation:</b> Rising tensions across Europe</p>
-<p><b>Summary:</b> Multiple countries are entering diplomatic instability following recent territorial disputes.</p>
-<small>Updated: 25 June 2026</small>
-</div>
-
-<!-- CURRENT ERA -->
-<div class="card era">
-<h2>🌍 Current Era: Era of Expansion</h2>
+<h2>🔥 Latest Announcement</h2>
+<p><b>New Regional Update Incoming</b></p>
 <p>
-The world is currently experiencing rapid territorial growth, shifting alliances,
-and increasing regional conflicts.
+Developers have teased a new regional expansion system affecting Europe and Asia regions.
+Players should expect map adjustments and balance changes.
 </p>
+<small>Posted: 25 June 2026</small>
 </div>
 
-<!-- ACTIVE CONFLICT -->
-<div class="card war">
-<h2>⚔️ Active Conflict Report</h2>
-<p><b>Conflict:</b> Central European Dispute</p>
+<!-- CURRENT BANNER -->
+<div class="card banner">
+<h2>🎴 Current Banner</h2>
+<p><b>European Expansion Event</b></p>
 <ul>
-<li>🇪🇸 Spain — Stabilizing</li>
-<li>🇫🇷 France — Diplomatic pressure</li>
-<li>🇩🇪 Germany — Economic escalation</li>
+<li>🇪🇸 Spain — Legendary Rate UP</li>
+<li>🇫🇷 France — Epic Rate UP</li>
+<li>🇩🇪 Germany — Rare Rate UP</li>
 </ul>
-<small>Status: Ongoing</small>
+<p><b>Duration:</b> 25 June – 2 July</p>
 </div>
 
-<!-- HISTORICAL ARCHIVE -->
-<div class="card">
-<h2>📜 Recent Chronicle Entries</h2>
-
+<!-- PATCH NOTES -->
+<div class="card patch">
+<h2>📦 Patch Notes v1.3</h2>
 <ul>
-<li><b>Cold Fragmentation Crisis</b> — Diplomatic breakdown across northern states</li>
-<li><b>The Baltic Realignment</b> — Major shift in alliances</li>
-<li><b>Industrial Surge Period</b> — Rapid economic expansion phase</li>
+<li>Adjusted war balance in Central Europe</li>
+<li>Increased influence gain for smaller nations</li>
+<li>Fixed diplomacy UI bug</li>
+<li>Improved event tracking system</li>
 </ul>
 </div>
 
-<!-- ABOUT -->
+<!-- GAME REPORT -->
 <div class="card">
-<h2>🧠 About This Chronicle</h2>
-<p>
-The PBGO World Chronicle is a living archive documenting the evolution of the PBGO world,
-including political eras, conflicts, and global events.
-</p>
+<h2>📊 Weekly Game Report</h2>
+<ul>
+<li>Most active region: Western Europe</li>
+<li>Most used nation: Spain 🇪🇸</li>
+<li>Most conflicts: Border disputes increased by 12%</li>
+</ul>
+</div>
+
+<!-- ARCHIVE -->
+<div class="card archive">
+<h2>📜 News Archive</h2>
+<ul>
+<li>v1.2 — First banner system introduced</li>
+<li>v1.1 — Diplomacy overhaul</li>
+<li>v1.0 — Game launch update</li>
+</ul>
 </div>
 
 </div>
 
 <footer>
-PBGO World Chronicle — Fan Archive Project
+PBGO News Chronicle — Fan-made project (not official)
 </footer>
 
 </body>
